@@ -12,11 +12,14 @@ public class TextController : MonoBehaviour {
 	void Start () {
 		text.text = "Hello World";
 	}
-	
+
+	#region Game State 
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Space)){
-			text.text = "Space key pressed";
+			text.text = "asdf asdf asdf saf sasadfsf w asdf sas asasdf, " + 
+						"sfsadf asfas  af asfasas asf asf";
 		}
 	}
+	#endregion
 }

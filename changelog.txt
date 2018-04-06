@@ -1,0 +1,17 @@
+# Stable Channel Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.3.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## 1.0 (Build 1023)
+
+## 1.0 (Build 1001)
+2018-03-19
+### Added
+- This CHANGELOG file to hopefully serve as an evolving example of a
+  standardized open source project CHANGELOG.
+- README.md contains the Dragon World text-based game information. 
+- Basic guidelines, including proper date formatting for CHANGELOG.

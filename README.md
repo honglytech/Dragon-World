@@ -7,4 +7,6 @@ Unit Chair: Henry Larkin
 SID: 215350188
 Name: Hong Ly
 
-(Henry wants to also see both licenses.txt and changelog files)
+# Henry comments 13/April:
+- You need many more commits per week to pass.
+- So far I can't see any useful code, nor any text-based data files.

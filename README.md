@@ -7,6 +7,9 @@ Unit Chair: Henry Larkin
 SID: 215350188
 Name: Hong Ly
 
+# SouceTree Tutorial with GitHub 
+https://youtu.be/t0hR0Q7I4mU
+
 # Henry comments 13/April:
 - You need many more commits per week to pass.
 - So far I can't see any useful code, nor any text-based data files.

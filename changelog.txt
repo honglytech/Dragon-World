@@ -6,7 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 1024)
+2018-04-19
+### Added
+- Enemy class added 
+- Dragon enemy class added 
+- EvilSpirit enemy class added 
+
 ## 1.0 (Build 1023)
+2018-04-18
+### Added
+- Property defined for character class added 
 
 ## 1.0 (Build 1001)
 2018-03-19
@@ -15,3 +25,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   standardized open source project CHANGELOG.
 - README.md contains the Dragon World text-based game information. 
 - Basic guidelines, including proper date formatting for CHANGELOG.
+ 

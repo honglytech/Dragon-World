@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 1030)
+2018-04-20
+### Added 
+- Player class added. 
+- ItemDatabase added. 
+
 ## 1.0 (Build 1024)
 2018-04-19
 ### Added

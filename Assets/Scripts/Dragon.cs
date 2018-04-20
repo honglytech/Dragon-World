@@ -7,7 +7,8 @@ using TextDragonWorldRPG;
 public class Dragon : Enemy {
 	
 	// Use this for initialization
-	void Start () {
+	void Start () {	
+
 		Energy = 20;
 		Attack = 8;
 		Defence = 5;

@@ -24,11 +24,12 @@ public class Player : Character {
 		Inventory.Add (item);
 	}
 
+	/*
 	public override void TakeDemage(int amount)
 	{
 		Debug.Log ("Player override TakeDemage");
-		base.TakeDemage (amount);
-	}
+		//base.TakeDemage (amount);
+	}*/
 
 	public override void Die()
 	{

@@ -6,11 +6,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.1 (Build 2020)
+2018-04-21
+### Added 
+- Added EnemyDatabase class. 
+- Created ItemDatabase object in hierarchy.
+- Added ItemDatabase component to ItemDatabase object. 
+- Created EnemyDatabase object in hierarchy. 
+- Added Dragon component to EnemyDatabase object.
+- Added EvilSpirit component to EnemyDatabase object. 
+
 ## 1.0 (Build 1030)
 2018-04-20
 ### Added 
 - Player class added. 
-- ItemDatabase added. 
+- ItemDatabase class added. 
 
 ## 1.0 (Build 1024)
 2018-04-19

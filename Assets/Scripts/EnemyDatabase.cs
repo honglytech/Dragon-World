@@ -20,9 +20,15 @@ public class EnemyDatabase : MonoBehaviour {
 		{
 			Debug.Log("Enemy found!");
 			Enemies.Add (enemy);
-
+			// use this 
 			//Enemies.AddRange (GetComponent<Enemy>());
 		}
 
 	}
+
+	public Enemy GetRandomEnemy()
+	{
+		return Enemies[Random.Range(0, Enemies.Count)];
+	}
+
 }

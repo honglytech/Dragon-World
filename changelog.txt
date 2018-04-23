@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 2024)
+2018-04-23
+### Added 
+- Dungeon class added. 
+- GetRandomEnemy method added to EnemyDatabase class. 
+
 ## 1.0 (Build 2023)
 2018-04-22
 ### Added 

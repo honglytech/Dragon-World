@@ -12,7 +12,7 @@ https://youtu.be/t0hR0Q7I4mU
 
 # Software Required to Compile 
 - Unity 
-- Visual Studio 
+- Visual Studio or MonoDevelop
 
 # Henry comments 13/April:
 - You need many more commits per week to pass.

@@ -9,6 +9,7 @@ public class Player : Character {
 
 	// Use this for initialization
 	void Start () {
+		// For now, these variables are used for testing 
 		Floor = 0; 
 		Energy = 25;
 		Attack = 15;

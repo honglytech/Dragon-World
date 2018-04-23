@@ -8,7 +8,7 @@ public class Dragon : Enemy {
 	
 	// Use this for initialization
 	void Start () {	
-
+		// For now, these variables are used for testing 
 		Energy = 20;
 		Attack = 8;
 		Defence = 5;

@@ -8,6 +8,7 @@ public class EvilSpirit : Enemy {
 	
 	// Use this for initialization
 	void Start () {
+		// For now, these variables are used for testing 
 		Energy = 10;
 		Attack = 4;
 		Defence = 3;

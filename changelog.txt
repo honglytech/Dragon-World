@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 3000)
+2018-04-24
+- DragonWorld class added. 
+- Created DragonWorld object in hierarchy.
+- Draged DragonWorld component (class) to DragonWorld object in Inspector and set grid values. 
+- Set script execution order in Edit -> Project Settings and add EnemyDatabase, ItemDatabase then DragonWorld.
+
 ## 1.0 (Build 2024)
 2018-04-23
 ### Added 
@@ -22,10 +29,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added 
 - Added EnemyDatabase class. 
 - Created ItemDatabase object in hierarchy.
-- Added ItemDatabase component to ItemDatabase object. 
+- Draged ItemDatabase component to ItemDatabase object in Inspector. 
 - Created EnemyDatabase object in hierarchy. 
-- Added Dragon component to EnemyDatabase object.
+- Draged Dragon component to EnemyDatabase object in Inspector.
 - Added EvilSpirit component to EnemyDatabase object. 
+- Set Scripting Runtime Version to .Net 4.6 in Edit -> Project Settings -> Player and under Scripting Runtime Version, set it to Experimental (.NET 4.6 Equivalent).
 
 ## 1.0 (Build 1030)
 2018-04-20

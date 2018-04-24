@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
-public class Dungeon : MonoBehaviour {
+public class Dungeon {
 
 	// Property chest that can be assigned to and randomly creates itself to the Dungeon
 	public Chest Chest { get; set; }

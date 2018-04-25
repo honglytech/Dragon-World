@@ -15,13 +15,21 @@ public class DragonWorld : MonoBehaviour {
 
 		// Casting for floats (.x and .y) to integers
 		Dungeon = new Dungeon[(int)Grid.x, (int)Grid.y];
-		GenerateFloor(); 
+		StartCoroutine(GenerateFloor()); 
 	}
 
 	// Floor that lays out the dungeons and creates the grids 
-	public void GenerateFloor(){
+	/* Coroutines: When calling a function, it runs to completion before returning. 
+	   This effectively means that any action taking place in a function must happen within a single frame update; 
+	   a function call can’t be used to contain a procedural animation or a sequence of events over time.
+	   https://docs.unity3d.com/Manual/Coroutines.html */
+	/* A coroutine is a function that can suspend its execution (yield) until the given YieldInstruction finishes.
+	   https://docs.unity3d.com/ScriptReference/Coroutine.html */
+	// Coroutine uses IEnumerator keyword that can go through one step at a time.
+	public IEnumerator GenerateFloor(){
 		// Create a coordinate system using nested loops
 		// Grid.x is now 10 columns as defined in Unity's Inspector of DragonWorld 
+		Debug.Log("Generating floor!");
 		for(int x = 0; x < Grid.x; x++){
 			// Grid.y is rows 
 			for(int y = 0; y < Grid.y; y++){
@@ -33,6 +41,11 @@ public class DragonWorld : MonoBehaviour {
 				};
 			}
 		}
+
+		// Return the enumerator value that requires to add to coroutine and checks every single frame.
+		// Create a new object for yield instruction to wait for 4 seconds before continue execution below codes.
+		Debug.Log("Finding exit that takes seconds!");
+		yield return new WaitForSeconds(4);
 
 		// Create a exit for the next floor using local method 
 		// Random positions for exit 

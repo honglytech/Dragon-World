@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 3010)
+2018-04-25
+- Added coroutine to GenerateFloor method in DragonWorld class. 
+
 ## 1.0 (Build 3000)
 2018-04-24
 - DragonWorld class added. 

@@ -17,3 +17,7 @@ https://youtu.be/t0hR0Q7I4mU
 # Henry comments 13/April:
 - You need many more commits per week to pass.
 - So far I can't see any useful code, nor any text-based data files.
+
+# Henry's Comments 27/April
+- compile instructions + directory explanation still missing (just saying "Unity" and "Visual Studio" doesn't tell me which to use in what order)
+- still no data for your game? That needs attention very very soon, as you can't start writing and developing your game world until you can load game data files.

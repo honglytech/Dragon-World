@@ -11,8 +11,16 @@ Name: Hong Ly
 https://youtu.be/t0hR0Q7I4mU
 
 # Software Required to Compile 
-- Unity 
-- Visual Studio or MonoDevelop
+- Unity 2017 (Personal version)
+Download Link: https://unity3d.com/get-unity/download
+
+# Here are the steps to compile DragonWorld game in Unity:
+1. Download the project file by clicking on "Clone or download" button. 
+2. Click on "Download Zip" button.
+3. After downloading the zip file, extract it into a folder. 
+4. Inside the Dragon-World-master folder, goes to Assets folder. 
+5. click on Menu.unity to open the game with Unity software. 
+6. Once the game is opened in Unity, press on the Play (Triangle) button to run the game. 
 
 # Henry comments 13/April:
 - You need many more commits per week to pass.

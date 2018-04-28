@@ -4,7 +4,8 @@ using UnityEngine;
 using TextDragonWorldRPG; 
 
 // Enemy class is inherited from Character class 
-public class Enemy : Character {
+public class Enemy : Character
+{
 
 	// Use this for initialization
 	void Start () {

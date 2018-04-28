@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
-public class EnemyDatabase : MonoBehaviour {
+public class EnemyDatabase : MonoBehaviour
+{
 
 	// Enemies is a list of type enemy and the objects can be Dragon and EvilSpirit
 	// which are objects that are classes that inherit from enemy (polymorphism)

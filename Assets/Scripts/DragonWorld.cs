@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
-public class DragonWorld : MonoBehaviour {
+public class DragonWorld : MonoBehaviour
+{
 
 	// 2D array 
 	public Dungeon[,] Dungeon { get; set; }
 	public Vector2 Grid; 
 
-	private void Awake(){
+	private void Awake()
+	{
 		// Grid with 4 columns and 6 rows 
 		// Dungeon = new Dungeon[4, 6];
 
@@ -26,16 +28,20 @@ public class DragonWorld : MonoBehaviour {
 	/* A coroutine is a function that can suspend its execution (yield) until the given YieldInstruction finishes.
 	   https://docs.unity3d.com/ScriptReference/Coroutine.html */
 	// Coroutine uses IEnumerator keyword that can go through one step at a time.
-	public IEnumerator GenerateFloor(){
+	public IEnumerator GenerateFloor()
+	{
 		// Create a coordinate system using nested loops
 		// Grid.x is now 10 columns as defined in Unity's Inspector of DragonWorld 
 		Debug.Log("Generating floor!");
-		for(int x = 0; x < Grid.x; x++){
+		for(int x = 0; x < Grid.x; x++)
+		{
 			// Grid.y is rows 
-			for(int y = 0; y < Grid.y; y++){
+			for(int y = 0; y < Grid.y; y++)
+			{
 				// Randomly generate new dungeons using the constructor from Dungeon class 
 				// A first floor of the dungeon is created 
-				Dungeon [x, y] = new Dungeon {
+				Dungeon [x, y] = new Dungeon
+				{
 					// Initialise properties within the object 
 					DungeonIndex = new Vector2 (x, y)
 				};

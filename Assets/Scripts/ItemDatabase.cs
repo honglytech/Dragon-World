@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
-public class ItemDatabase : MonoBehaviour {
+public class ItemDatabase : MonoBehaviour
+{
 
 	// new List<string>() is an auto implementing property 
 	// that is allowed to use with .net 4.6 of C# 6.0

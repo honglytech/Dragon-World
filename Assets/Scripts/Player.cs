@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
-public class Player : Character {
+public class Player : Character
+{
 
 	public int Floor { get; set; }
 

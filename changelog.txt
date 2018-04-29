@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 3022)
+2018-04-29
+- Dragon class now supports JSON file.
+- EvilSpirit class supports JSON file. 
+
 ## 1.0 (Build 3017)
 2018-04-28
 - JSON file is added inside StreamingAssets folder.

@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-2018-04-30 (Build 3040)
+## 1.0 (Build 3040)
+ 2018-04-30
 - Journal class added. 
 - Created Player object in hierarchy.
 - Draged Player(Script) and Journal(Script) components to Player object in Inspector. 

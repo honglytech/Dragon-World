@@ -28,10 +28,13 @@ public class Player : Character
 		//Gold = 0;
 		Inventory = new List<string> ();
 		DungeonIndex = new Vector2 (2, 2);
+		AddItem("A lot of items");
 	}
 
 	public void AddItem(string item)
 	{
+		Journal.Instance.Log("You were given item: " + item);
+
 		// Add item to the list 
 		Inventory.Add (item);
 	}

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 3041)
+2018-05-01
+- Move direction method added in Player class - in progress. 
+
 ## 1.0 (Build 3040)
  2018-04-30
 - Journal class added. 

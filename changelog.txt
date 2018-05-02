@@ -6,9 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 3042)
+2018-05-02
+- Move direction on Player class (in progress). 
+- Hook up move buttons to Move method in Player class. 
+- In Panel -> WalkControls -> North. On the Onclick event in the Inspector, 
+  - click on add button, select Runtime Only then select Player object. 
+  - click on No Function, select Player then select Move(int) method and set the parameter to 0 (north).
+
 ## 1.0 (Build 3041)
 2018-05-01
-- Move direction method added in Player class - in progress. 
+- Move direction method added in Player class (in progress). 
 
 ## 1.0 (Build 3040)
  2018-04-30

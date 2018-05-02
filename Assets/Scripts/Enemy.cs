@@ -6,11 +6,7 @@ using TextDragonWorldRPG;
 // Enemy class is inherited from Character class 
 public class Enemy : Character
 {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public string Description { get; set; }
 
 	// Override a vitual method from character class
 	public override void TakeDamage(int amount)

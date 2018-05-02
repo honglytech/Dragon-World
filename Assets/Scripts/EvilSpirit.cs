@@ -20,6 +20,7 @@ public class EvilSpirit : Enemy
 		// For now, these variables are used for testing 
 		Gold = evilSpiritDragon.Gold;
 		Debug.Log(Gold);
+		Description = "Evil Spirit";
 		//Attack = 4;
 		//Defence = 3;
 		//Gold = 20;

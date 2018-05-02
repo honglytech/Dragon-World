@@ -32,6 +32,7 @@ public class Player : Character
 		//Defence = 6;
 		//Gold = 0;
 		Inventory = new List<string> ();
+		// Current position 
 		DungeonIndex = new Vector2 (2, 2);
 		// Set up the dungeon for navigation 
 		world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y].Empty = true;
@@ -71,24 +72,50 @@ public class Player : Character
 		 +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 		 */
 
-		switch (direction)
+		if (direction == 0 && DungeonIndex.y > 0) 
 		{
 			// Move north
-			case 0:
-			
-				break;
-			// Move east
-			case 1: 
-				break;
-			// Move south
-			case 2:
-
-				break;
-			// Move west
-			case 3: 
-				break;
+			DungeonIndex -= Vector2.up;
 		}
+		if (direction == 1 && DungeonIndex.x < world.Dungeon.GetLength(0)-1)
+		{
+			// Move east
+			DungeonIndex += Vector2.right;
+		}
+		if (direction == 2 && DungeonIndex.y < world.Dungeon.GetLength(1)-1)
+		{
+			// Move south
+			DungeonIndex -= Vector2.down;
+		}
+		if (direction == 3 && DungeonIndex.x > 0) 
+		{
+			// Move west
+			DungeonIndex += Vector2.left;
+		}
+		// After player has moved, then investigate which dungeon the player is in. 
+		Investigate ();
 
+
+	}
+
+	public void Investigate()
+	{
+		this.CurrentLocation = world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y];
+		if (this.CurrentLocation.Empty) {
+			Journal.Instance.Log ("Player is in an empty dungeon!");
+		} 
+		else if (this.CurrentLocation.Chest != null) 
+		{
+			Journal.Instance.Log ("Player has found a chest!" + " What do you want to do now?" );
+		} 
+		else if (this.CurrentLocation.Enemy != null) 
+		{
+			Journal.Instance.Log ("You face an enemy: " + CurrentLocation.Enemy.Description + " How do you decide now?");	
+		}	
+		else if (this.CurrentLocation.Exit) 
+		{
+			Journal.Instance.Log ("You can exit to the next floor. Do you want to continue?");
+		}	
 	}
 
 	public void AddItem(string item)

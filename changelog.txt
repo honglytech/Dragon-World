@@ -37,7 +37,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 1.0 (Build 3012)
 2018-04-27
-- Added User Interface for Home Screen
+- Added User Interface for Home Screen.
 
 ## 1.0 (Build 3010)
 2018-04-25
@@ -93,8 +93,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 1.0 (Build 1001)
 2018-03-19
 ### Added
-- This CHANGELOG file to hopefully serve as an evolving example of a
-  standardized open source project CHANGELOG.
+- This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
 - README.md contains the Dragon World text-based game information. 
 - Basic guidelines, including proper date formatting for CHANGELOG.
  

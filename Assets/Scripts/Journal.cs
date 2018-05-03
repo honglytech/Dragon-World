@@ -6,14 +6,16 @@ using TextDragonWorldRPG;
 
 public class Journal : MonoBehaviour 
 {
+	
 	// Serialize Text Field
 	[SerializeField] Text logText;	
 	public static Journal Instance { get; set; }
 
 	// Use this for initialization
-	void Awake () 
+	void Awake() 
 	{
 		// If instance is not null and instance is not assigned to this instance of journal
+		// Destroy game object since only one versino is needed. 
 		if (Instance != null && Instance != this)
 			Destroy (this.gameObject);
 		else

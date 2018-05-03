@@ -40,10 +40,10 @@ public class DragonWorld : MonoBehaviour
 			{
 				// Randomly generate new dungeons using the constructor from Dungeon class 
 				// A first floor of the dungeon is created 
-				Dungeon [x, y] = new Dungeon
+				Dungeon[x, y] = new Dungeon
 				{
 					// Initialise properties within the object 
-					DungeonIndex = new Vector2 (x, y)
+					DungeonIndex = new Vector2(x, y)
 				};
 			}
 		}
@@ -58,8 +58,8 @@ public class DragonWorld : MonoBehaviour
 		Vector2 exitDungeon = new Vector2((int)Random.Range(0, Grid.x), (int)Random.Range(0, Grid.y)); 
 
 		// Set the dungeon with all coordinates to be an exit 
-		Dungeon[(int)exitDungeon.x, (int)exitDungeon.y].Exit = true;
-		Dungeon[(int)exitDungeon.x, (int)exitDungeon.y].Empty = false;
+		//Dungeon[(int)exitDungeon.x, (int)exitDungeon.y].Exit = true;
+		//Dungeon[(int)exitDungeon.y, (int)exitDungeon.y].Empty = false;
 		Debug.Log ("Exit is at: " + exitDungeon); 
 	}
 }

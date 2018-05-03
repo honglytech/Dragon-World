@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class TextController : MonoBehaviour {
 
+	/*
 	public Text text;
 
 
@@ -22,4 +23,5 @@ public class TextController : MonoBehaviour {
 		}
 	}
 	#endregion
+	*/
 }

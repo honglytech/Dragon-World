@@ -317,11 +317,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 99
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 60
+    m_MaxSize: 125
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -421,7 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d0e8ecf3ed61e48a3b77e0fa8a52a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 234185593}
 --- !u!1 &241822251
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +623,7 @@ MonoBehaviour:
     m_Right: 10
     m_Top: 10
     m_Bottom: 10
-  m_ChildAlignment: 7
+  m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -1158,7 +1157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d0e8ecf3ed61e48a3b77e0fa8a52a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1008036574}
 --- !u!114 &1008036574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,7 +1189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Player: 30 energy, 4 attack, 10 defence, 15 gold'
+  m_Text: 'Enemy: 30 energy, 4 attack, 10 defence, 15 gold'
 --- !u!222 &1008036575
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1452,9 +1450,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483376490}
-        m_MethodName: Move
-        m_Mode: 3
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1462,7 +1460,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1111792066
@@ -1809,7 +1807,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.7855671, g: 0.9485294, b: 0.41149437, a: 0}
+  m_BackGroundColor: {r: 0.6965518, g: 1, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2050,8 +2048,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1786968053}
   m_HandleRect: {fileID: 1786968052}
   m_Direction: 3
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2670,7 +2668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d0e8ecf3ed61e48a3b77e0fa8a52a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1651762372}
 --- !u!114 &1651762372
 MonoBehaviour:
   m_ObjectHideFlags: 0

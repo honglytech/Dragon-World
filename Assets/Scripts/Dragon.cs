@@ -8,13 +8,17 @@ using System.IO;
 public class Dragon : Enemy
 {
 	string path;
+	// Represent raw JSON data
 	string jsonString;
 
 	// Use this for initialization
 	void Start ()
 	{	
+		// Store the path of JSON data file 
 		path = Application.streamingAssetsPath + "/dragon.json"; 
+		// Read all blocks of texts from JSON file 
 		jsonString = File.ReadAllText(path);
+		// Pass dragonJson type so that JSON file knows which type it is working with
 		dragonJson gameDragon = JsonUtility.FromJson<dragonJson>(jsonString);
 		//Debug.Log(gameDragon.Attack);
 
@@ -29,9 +33,11 @@ public class Dragon : Enemy
 	}
 }
 
+// Create a class to map the JSON data to
 [System.Serializable]
 public class dragonJson
 {
+	// Using variable rather than property since System.Serializable supports only variable
 	public int Energy;
 	public int Attack;
 	public int Defence;

@@ -17,8 +17,9 @@ public class Player : Character
 	DragonWorld world; 
 
 	// Use this for initialization
-	void Start () {
-
+	void Start()
+	{
+		
 		path = Application.streamingAssetsPath + "/player.json"; 
 		jsonString = File.ReadAllText(path);
 		playerJson gamePlayer = JsonUtility.FromJson<playerJson>(jsonString);
@@ -31,12 +32,12 @@ public class Player : Character
 		//Attack = 15;
 		//Defence = 6;
 		//Gold = 0;
-		Inventory = new List<string> ();
+		Inventory = new List<string>();
 		// Current position 
-		DungeonIndex = new Vector2 (2, 2);
+		DungeonIndex = new Vector2(2, 2);
 		// Set up the dungeon for navigation 
-		world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y].Empty = true;
-		AddItem("A lot of items");
+		//world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y].Empty = true;
+		AddItem("many items");
 	}
 
 	public void Move(int direction)
@@ -93,7 +94,7 @@ public class Player : Character
 			DungeonIndex += Vector2.left;
 		}
 		// After player has moved, then investigate which dungeon the player is in. 
-		Investigate ();
+		//Investigate ();
 
 
 	}
@@ -102,29 +103,33 @@ public class Player : Character
 	{
 		this.CurrentLocation = world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y];
 		if (this.CurrentLocation.Empty) {
-			Journal.Instance.Log ("Player is in an empty dungeon!");
+			//Journal.Instance.Log ("Player is in an empty dungeon!");
 		} 
 		else if (this.CurrentLocation.Chest != null) 
 		{
-			Journal.Instance.Log ("Player has found a chest!" + " What do you want to do now?" );
+			//Journal.Instance.Log ("Player has found a chest!" + " What do you want to do now?" );
 		} 
 		else if (this.CurrentLocation.Enemy != null) 
 		{
-			Journal.Instance.Log ("You face an enemy: " + CurrentLocation.Enemy.Description + " How do you decide now?");	
+			//Journal.Instance.Log ("You face an enemy: " + CurrentLocation.Enemy.Description + " How do you decide now?");	
 		}	
 		else if (this.CurrentLocation.Exit) 
 		{
-			Journal.Instance.Log ("You can exit to the next floor. Do you want to continue?");
+			//Journal.Instance.Log ("You can exit to the next floor. Do you want to continue?");
 		}	
 	}
 
 	public void AddItem(string item)
 	{
 		Journal.Instance.Log("You were given item: " + item);
-
 		// Add item to the list 
-		Inventory.Add (item);
+		Inventory.Add(item);
 	}
+
+	public void AddItem(int item)
+	{
+		Inventory.Add(ItemDatabase.Instance.Items[item]);
+	}	
 
 	/*
 	public override void TakeDemage(int amount)

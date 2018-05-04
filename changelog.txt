@@ -6,14 +6,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 3068)
+2018-05-04
+- Add comments explaning Move method in Player class. 
+- DetermineLocation method is added. 
+- Move direction in Player class is working. 
+
 ## 1.0 (Build 3043) 
 2018-05-03
-- Add comments explaining the use of JSON
+- Add comments explaining the use of JSON.
 - Testing and debugging movement in Player class (in progress). 
 
 ## 1.0 (Build 3042)
 2018-05-02
-- Move direction on Player class (in progress). 
+- Move direction in Player class (in progress). 
 - Hook up move buttons to Move method in Player class. 
 - In Panel -> WalkControls -> North. On the Onclick event in the Inspector, 
   - click on add button, select Runtime Only then select Player object. 

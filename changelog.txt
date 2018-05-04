@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add comments explaning Move method in Player class. 
 - DetermineLocation method is added. 
 - Move direction in Player class is working. 
+- Error log on movement: index outside the bounds of array is fixed. 
 
 ## 1.0 (Build 3043) 
 2018-05-03

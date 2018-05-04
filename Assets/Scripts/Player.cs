@@ -85,11 +85,13 @@ public class Player : Character
         if (direction == 0 && DungeonIndex.y > 0)
         {
             // Move north
+            Journal.Instance.Log("You move north");
             DungeonIndex -= Vector2.up;
         }
         if (direction == 1 && DungeonIndex.x < world.Dungeon.GetLength(0) - 1)
         {
             // Move east
+            Journal.Instance.Log("You move east");
             DungeonIndex += Vector2.right;
         }
         // Since the size of the dungeon is dynamic that is not fixed (can be changed
@@ -99,15 +101,20 @@ public class Player : Character
         if (direction == 2 && DungeonIndex.y < world.Dungeon.GetLength(1) - 1)
         {
             // Move south
+            Journal.Instance.Log("You move south");
             DungeonIndex -= Vector2.down;
         }
         if (direction == 3 && DungeonIndex.x > 0)
         {
             // Move west
+            Journal.Instance.Log("You move west");
             DungeonIndex += Vector2.left;
         }
+
         // After player has moved, then investigate which dungeon the player is in. 
-        DetermineLocation();
+        // Check to see if the current dungeon index is different from player dungeon index (last time)
+        if (this.CurrentLocation.DungeonIndex != DungeonIndex)
+            DetermineLocation();
 
     }
 

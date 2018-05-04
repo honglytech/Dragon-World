@@ -43,14 +43,14 @@ public class DragonWorld : MonoBehaviour
 				Dungeon[x, y] = new Dungeon
 				{
 					// Initialise properties within the object 
-					DungeonIndex = new Vector2(x, y)
+					DungeonIndex = new Vector2(x,y)
 				};
 			}
 		}
 
 		// Return the enumerator value that requires to add to coroutine and checks every single frame.
 		// Create a new object for yield instruction to wait for 4 seconds before continue execution below codes.
-		Debug.Log("Finding exit that takes seconds!");
+		Debug.Log("Finding exit that takes seconds!" + Time.time);
 		yield return new WaitForSeconds(4);
 
 		// Create a exit for the next floor using local method 
@@ -58,8 +58,8 @@ public class DragonWorld : MonoBehaviour
 		Vector2 exitDungeon = new Vector2((int)Random.Range(0, Grid.x), (int)Random.Range(0, Grid.y)); 
 
 		// Set the dungeon with all coordinates to be an exit 
-		//Dungeon[(int)exitDungeon.x, (int)exitDungeon.y].Exit = true;
-		//Dungeon[(int)exitDungeon.y, (int)exitDungeon.y].Empty = false;
-		Debug.Log ("Exit is at: " + exitDungeon); 
+		Dungeon[(int)exitDungeon.x, (int)exitDungeon.y].Exit = true;
+		Dungeon[(int)exitDungeon.y, (int)exitDungeon.y].Empty = false;
+		Debug.Log ("Exit is at: " + exitDungeon + " " + Time.time); 
 	}
 }

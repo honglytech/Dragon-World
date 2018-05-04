@@ -8,14 +8,15 @@ public class Enemy : Character
 {
 	public string Description { get; set; }
 
-	// Override a vitual method from character class
-	public override void TakeDamage(int amount)
-	{
-		base.TakeDamage (amount);
-		Debug.Log ("Only happens on enemy! not character class");
-	}
+    // Override a vitual method from character class
+    public override void TakeDamage(int amount)
+    {
+        base.TakeDamage(amount);
+        Debug.Log("Only happens on enemy! not character class");
+    }
 
-	public override void Die()
+
+    public override void Die()
 	{
 		Debug.Log ("Enemy died");
 	}

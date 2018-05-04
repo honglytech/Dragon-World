@@ -18,8 +18,8 @@ public class Dragon : Enemy
 		path = Application.streamingAssetsPath + "/dragon.json"; 
 		// Read all blocks of texts from JSON file 
 		jsonString = File.ReadAllText(path);
-		// Pass dragonJson type so that JSON file knows which type it is working with
-		dragonJson gameDragon = JsonUtility.FromJson<dragonJson>(jsonString);
+        // Pass dragonJson type so that JSON file knows which type it is working with
+	    DragonJson gameDragon = JsonUtility.FromJson<DragonJson>(jsonString);
 		//Debug.Log(gameDragon.Attack);
 
 		// For now, these variables are used for testing 
@@ -35,7 +35,7 @@ public class Dragon : Enemy
 
 // Create a class to map the JSON data to
 [System.Serializable]
-public class dragonJson
+public class DragonJson
 {
 	// Using variable rather than property since System.Serializable supports only variable
 	public int Energy;

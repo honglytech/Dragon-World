@@ -23,9 +23,9 @@ namespace TextDragonWorldRPG
 		public virtual void TakeDamage(int amount)
 		{
 			Energy -= amount; 
-			if (Energy <= 0) 
+			if (Energy <= 0)
 			{
-				// die 	
+			    Die();
 			}	
 		}
 

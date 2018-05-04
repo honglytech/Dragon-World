@@ -15,7 +15,7 @@ public class EvilSpirit : Enemy
 
 		path = Application.streamingAssetsPath + "/evilSpirit.json"; 
 		jsonString = File.ReadAllText(path);
-		evilSpiritJson evilSpiritDragon = JsonUtility.FromJson<evilSpiritJson>(jsonString);
+	    EvilSpiritJson evilSpiritDragon = JsonUtility.FromJson<EvilSpiritJson>(jsonString);
 
 		// For now, these variables are used for testing 
 		Gold = evilSpiritDragon.Gold;
@@ -29,7 +29,7 @@ public class EvilSpirit : Enemy
 }
 
 [System.Serializable]
-public class evilSpiritJson
+public class EvilSpiritJson
 {
 	public int Energy;
 	public int Attack;

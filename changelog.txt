@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4010)
+2018-05-05
+- Encounter class added.
+- Created Encounter object in hierarchy.
+- Draged Encounter(Script) component to Encounter object and assigned Player object in Encounter(Script) in Inspector. 
+- Draged Encounter object to Player object under Player(Script) in Inpector.
+- Assigned some methods from Encounter class to Player class. 
+
 ## 1.0 (Build 3068)
 2018-05-04
 - Add comments explaning Move method in Player class. 

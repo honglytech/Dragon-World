@@ -16,6 +16,7 @@ public class Player : Character
     // Can be accessible in the inspector 
     [SerializeField]
     Encounter encounter;
+    // Make it public so that ExitFloor method in Encounter class can be accessible 
     public DragonWorld world;
 
     // Use this for initialization
@@ -145,6 +146,7 @@ public class Player : Character
         else if (this.CurrentLocation.Exit)
         {
             Journal.Instance.Log("You can exit to the next floor. Do you want to continue?");
+            encounter.StartExit();
         }
     }
 

@@ -657,7 +657,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1483376490}
-  dynamicControls: []
+  dynamicControls:
+  - {fileID: 656320548}
+  - {fileID: 598515765}
+  - {fileID: 1217728612}
+  - {fileID: 2064681550}
 --- !u!224 &473426424
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2003,7 +2007,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1786968052}
   m_Direction: 3
   m_Value: 1
-  m_Size: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

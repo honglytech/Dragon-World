@@ -15,7 +15,8 @@ public class Player : Character
     public Dungeon CurrentLocation { get; set; }
     // Can be accessible in the inspector 
     [SerializeField]
-    DragonWorld world;
+    Encounter encounter;
+    public DragonWorld world;
 
     // Use this for initialization
     void Start()
@@ -121,6 +122,12 @@ public class Player : Character
     public void DetermineLocation()
     {
         this.CurrentLocation = world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y];
+        Debug.Log(DungeonIndex);
+        // Disable all dynmaic controls at the start of determine player current location 
+        // then start enable relevant buttons only. If the room has enemy, player can only 
+        // select fight or flee buttons, but not open chest button, etc. 
+        encounter.ResetDynamicControls();
+
         if (this.CurrentLocation.Empty)
         {
             Journal.Instance.Log("Player is in an empty dungeon!");
@@ -131,7 +138,9 @@ public class Player : Character
         }
         else if (this.CurrentLocation.Enemy != null)
         {
-            Journal.Instance.Log("You face an enemy: " + CurrentLocation.Enemy.Description + " How do you decide now?");	
+            Journal.Instance.Log("You face an enemy: " + CurrentLocation.Enemy.Description + " How do you decide now?");
+            // Player starts the fight when encounter an enemy
+            encounter.StartFight();
         }
         else if (this.CurrentLocation.Exit)
         {

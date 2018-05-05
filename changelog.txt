@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Draged Encounter(Script) component to Encounter object and assigned Player object in Encounter(Script) in Inspector. 
 - Draged Encounter object to Player object under Player(Script) in Inpector.
 - Assigned some methods from Encounter class to Player class. 
+- Hook up dynamic control buttons. 
 
 ## 1.0 (Build 3068)
 2018-05-04

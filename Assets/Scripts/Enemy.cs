@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TextDragonWorldRPG; 
+using TextDragonWorldRPG;
+
+// https://unity3d.com/learn/tutorials/topics/scripting/interfaces
+interface IBeast
+{
+    void Shout();
+}
 
 // Enemy class is inherited from Character class 
-public class Enemy : Character
+public class Enemy : Character, IBeast 
 {
 	public string Description { get; set; }
 
@@ -16,6 +22,10 @@ public class Enemy : Character
         Debug.Log("Only happens on enemy! not character class");
     }
 
+    public void Shout()
+    {
+
+    }
 
     public override void Die()
 	{

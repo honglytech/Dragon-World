@@ -12,6 +12,7 @@ public class Enemy : Character
     public override void TakeDamage(int amount)
     {
         base.TakeDamage(amount);
+        UIController.OnEnemyUpdate(this);
         Debug.Log("Only happens on enemy! not character class");
     }
 
@@ -19,5 +20,7 @@ public class Enemy : Character
     public override void Die()
 	{
 		Debug.Log ("Enemy died");
-	}
+	    Energy = MaximunEnergy;
+	    Encounter.OnEnemyDie();
+    }
 }

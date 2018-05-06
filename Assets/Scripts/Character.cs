@@ -9,7 +9,8 @@ namespace TextDragonWorldRPG
 	{
 	    #region Property
 	    public int Energy { get; set; }
-	    public int Attack { get; set; }
+	    public int MaximunEnergy { get; set; }
+        public int Attack { get; set; }
 	    public int Defence { get; set; }
 	    public int Gold { get; set; }
 	    // Vector2 allows to define an X and Y coordinate in 2D array

@@ -21,6 +21,7 @@ public class EvilSpirit : Enemy
 		Gold = evilSpiritDragon.Gold;
 		Debug.Log(Gold);
 		Description = "Evil Spirit";
+	    MaximunEnergy = 10;
 		//Attack = 4;
 		//Defence = 3;
 		//Gold = 20;

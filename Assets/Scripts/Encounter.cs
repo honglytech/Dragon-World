@@ -45,7 +45,7 @@ public class Encounter : MonoBehaviour {
         this.Enemy = player.CurrentLocation.Enemy;
         dynamicControls[0].interactable = true;
         dynamicControls[1].interactable = true;
-        //UIController.OnEnemyUpdate(this.Enemy);
+        UIController.OnEnemyUpdate(this.Enemy);
     }
 
     // Open chest method to get items and more
@@ -142,5 +142,6 @@ public class Encounter : MonoBehaviour {
         this.Enemy = null;
         // This will show up as an empty dungeon that the player can move again since the enemy is gone. 
         player.DetermineLocation();
+        UIController.OnEnemyUpdate(this.Enemy);
     }
 }

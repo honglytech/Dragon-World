@@ -24,6 +24,7 @@ public class Dragon : Enemy
 
 		// For now, these variables are used for testing 
 		//Energy = 20;
+	    MaximunEnergy = 20;
 		Attack = gameDragon.Attack;
 		Description = "Dragon";
 		//Debug.Log(Attack);

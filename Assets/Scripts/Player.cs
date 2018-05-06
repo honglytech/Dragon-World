@@ -42,7 +42,9 @@ public class Player : Character
         //world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y].Empty = true ;
         this.CurrentLocation = world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y];
         this.CurrentLocation.Empty = true;
-        AddItem("many items");
+        //AddItem("many items");
+        UIController.OnPlayerStatChange();
+        UIController.OnPlayerItemsChange();
     }
 
     public void Move(int direction)
@@ -135,6 +137,7 @@ public class Player : Character
         }
         else if (this.CurrentLocation.Chest != null)
         {
+            encounter.OpenChest();
             Journal.Instance.Log("Player has found a chest!" + " What do you want to do now?" );
         }
         else if (this.CurrentLocation.Enemy != null)
@@ -155,11 +158,13 @@ public class Player : Character
         Journal.Instance.Log("You were given: " + item);
         // Add item to the list 
         Inventory.Add(item);
+        UIController.OnPlayerItemsChange();
     }
 
     public void AddItem(int item)
     {
         Inventory.Add(ItemDatabase.Instance.Items[item]);
+        UIController.OnPlayerItemsChange();
     }
 
     
@@ -167,6 +172,7 @@ public class Player : Character
     {
         Debug.Log("Player override TakeDemage");
         base.TakeDamage(amount);
+        UIController.OnPlayerStatChange();
     }
 
     public override void Die()

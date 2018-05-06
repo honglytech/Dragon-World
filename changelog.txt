@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Called methods from UIController class to Player, Enemy and Encounter classes. 
 - Draged UIController(Script) object to UIController object in Inspector.
 - Under UIController in Inspector, assigned Player object, Player(Text), Enemy(Text) and Item(Text).
+- Interface keyword used (in progress).  
 
 ## 1.0 (Build 4010)
 2018-05-05

@@ -28,11 +28,6 @@ public class UIController : MonoBehaviour {
         // Add the UpdateEnemyStats listener to OnEnemyUpdateHandler  
         OnEnemyUpdate += UpdateEnemyStats;
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void UpdatePlayerStats()
     {

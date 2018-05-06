@@ -80,6 +80,8 @@ public class Encounter : MonoBehaviour {
             // Player gets gold from opening the chest
             player.Gold += chest.Gold;            
             player.AddItem(chest.Item);
+            UIController.OnPlayerStatChange();
+            UIController.OnPlayerItemsChange();
             Journal.Instance.Log("You found: " + chest.Item + " and " + chest.Gold + "g.");
         }
         player.CurrentLocation.Chest = null;
@@ -114,7 +116,8 @@ public class Encounter : MonoBehaviour {
         // Multiply player defence by 0.5, meaning player avoids the fight takes less damage amount
         int enemyDamageAmount = (int)(Random.value * (Enemy.Attack - (player.Defence * .5f)));
         // Enemy disappears
-        player.CurrentLocation.Enemy = null;        
+        player.CurrentLocation.Enemy = null;
+        UIController.OnEnemyUpdate(null);
         player.TakeDamage(enemyDamageAmount);
         Journal.Instance.Log("You avoid the fight, taking " + enemyDamageAmount + " damage!");
         player.DetermineLocation();

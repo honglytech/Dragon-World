@@ -6,12 +6,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4030)
+2018-05-06
+- UIController class added.
+- Called methods from UIController class to Player, Enemy and Encounter classes. 
+- Draged UIController(Script) object to UIController object in Inspector.
+- Under UIController in Inspector, assigned Player object, Player(Text), Enemy(Text) and Item(Text).
+
 ## 1.0 (Build 4010)
 2018-05-05
 - Encounter class added.
 - Created Encounter object in hierarchy.
 - Draged Encounter(Script) component to Encounter object and assigned Player object in Encounter(Script) in Inspector. 
-- Draged Encounter object to Player object under Player(Script) in Inpector.
+- Draged Encounter object to Player object under Player(Script) in Inspector.
 - Assigned some methods from Encounter class to Player class. 
 - Hook up dynamic control buttons.
 - ExitFloor method added to Encounter class.

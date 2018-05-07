@@ -4,9 +4,12 @@ using UnityEngine;
 using TextDragonWorldRPG;
 
 // https://unity3d.com/learn/tutorials/topics/scripting/interfaces
-interface IBeast
+public interface IBeast
 {
+    // Sample test using interface
+    // Method and property have to be defined in the class below in order to use with interface
     void Shout();
+    string Description { get; set; }
 }
 
 // Enemy class is inherited from Character class 

@@ -11,21 +11,31 @@ public class EnemyDatabase : MonoBehaviour
 	public List<Enemy> Enemies { get; set; } = new List<Enemy>();
 	public static EnemyDatabase Instance { get; set; }
 
+    public List<IBeast> Beasts { get; set; }
 	private void Awake()
 	{
 		Instance = this;
 
-		// Loop through enemy component
-		// can be Dragon or EvilSpirit
-		foreach (Enemy enemy in GetComponents<Enemy>()) 
+        // Testing using interface 
+	    foreach (IBeast enemy in GetComponents<IBeast>())
+	    {
+	        Debug.Log("Enemy found!");
+	        Beasts.Add(enemy);
+	        // use this 
+	        //Enemies.AddRange (GetComponent<Enemy>());
+	    }
+
+        // Loop through enemy component
+        // can be Dragon or EvilSpirit
+        /*foreach (Enemy enemy in GetComponents<Enemy>()) 
 		{
 			Debug.Log("Enemy found!");
 			Enemies.Add (enemy);
 			// use this 
 			//Enemies.AddRange (GetComponent<Enemy>());
-		}
+		}*/
 
-	}
+    }
 
 	public Enemy GetRandomEnemy()
 	{

@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4080)
+2018-06-06
+- Interface tested in EnemyDatabase. 
+- Open chest button (in progress).
+
 ## 1.0 (Build 4030)
 2018-05-06
 - UIController class added.

@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
-// https://unity3d.com/learn/tutorials/topics/scripting/interfaces
-public interface IBeast
-{
-    // Sample test using interface
-    // Method and property have to be defined in the class below in order to use with interface
-    void Shout();
-    string Description { get; set; }
-}
 
 // Enemy class is inherited from Character class 
-public class Enemy : Character, IBeast 
+public class Enemy : Character
 {
 	public string Description { get; set; }
 
@@ -23,11 +15,6 @@ public class Enemy : Character, IBeast
         base.TakeDamage(amount);
         UIController.OnEnemyUpdate(this);
         Debug.Log("Only happens on enemy! not character class");
-    }
-
-    public void Shout()
-    {
-
     }
 
     public override void Die()

@@ -137,7 +137,7 @@ public class Player : Character
         }
         else if (this.CurrentLocation.Chest != null)
         {
-            encounter.OpenChest();
+            encounter.StartChest();
             Journal.Instance.Log("Player has found a chest!" + " What do you want to do now?" );
         }
         else if (this.CurrentLocation.Enemy != null)

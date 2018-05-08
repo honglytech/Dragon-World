@@ -21,7 +21,7 @@ public class Encounter : MonoBehaviour {
     public delegate void OnEnemyDieEventHandler();
     public static OnEnemyDieEventHandler OnEnemyDie;
 
-    void Start ()
+    private void Start ()
     {
         // When calling this event, Prize method is also called on Encounter
         OnEnemyDie += Prize;
@@ -35,7 +35,7 @@ public class Encounter : MonoBehaviour {
             // Disable all dynamic controls (fight, run, exit & open chest)
             button.interactable = false;
         }
-        dynamicControls[0].interactable = false;
+        //dynamicControls[0].interactable = false;
     }
 
     // When player start fighting, only fight and run buttons are enabled.     
@@ -48,44 +48,9 @@ public class Encounter : MonoBehaviour {
         UIController.OnEnemyUpdate(this.Enemy);
     }
 
-    // Open chest method to get items and more
-    public void OpenChest()
+    public void StartChest()
     {
-        // Get chest from the current dungeon
-        Chest chest = player.CurrentLocation.Chest;
-        // Chest is trap, then take 3 damange
-        if (chest.Trap)
-        {
-            player.TakeDamage(3);
-            Journal.Instance.Log("This is a trap! You took 3 damage.");
-        }
-        else if (chest.Heal)
-        {
-            // Healing player
-            player.TakeDamage(-5);
-            Journal.Instance.Log("The chest contains 5 healing enery! You gained 5 energy.");
-        }
-        else if (chest.Enemy)
-        {
-            // An enemy appears after opening the chest 
-            player.CurrentLocation.Enemy = chest.Enemy;
-            // Chest is disappeared after opening
-            player.CurrentLocation.Chest = null;
-            Journal.Instance.Log("The chest contains an enemy. Watch out!");
-            // Determines the dungeon right after an enemy appears
-            player.DetermineLocation();
-        }
-        else
-        {
-            // Player gets gold from opening the chest
-            player.Gold += chest.Gold;            
-            player.AddItem(chest.Item);
-            UIController.OnPlayerStatChange();
-            UIController.OnPlayerItemsChange();
-            Journal.Instance.Log("You found: " + chest.Item + " and " + chest.Gold + "g.");
-        }
-        player.CurrentLocation.Chest = null;
-        dynamicControls[3].interactable = false;
+        dynamicControls[3].interactable = true;
     }
 
     // Enable exit button when the player find an exit 
@@ -121,6 +86,46 @@ public class Encounter : MonoBehaviour {
         player.TakeDamage(enemyDamageAmount);
         Journal.Instance.Log("You avoid the fight, taking " + enemyDamageAmount + " damage!");
         player.DetermineLocation();
+    }
+
+    // Open chest method to get items and more
+    public void OpenChest()
+    {
+        // Get chest from the current dungeon
+        Chest chest = player.CurrentLocation.Chest;
+        // Chest is trap, then take 3 damange
+        if (chest.Trap)
+        {
+            player.TakeDamage(3);
+            Journal.Instance.Log("This is a trap! You took 3 damage.");
+        }
+        else if (chest.Heal)
+        {
+            // Healing player
+            player.TakeDamage(-5);
+            Journal.Instance.Log("The chest contains 5 healing enery! You gained 5 energy.");
+        }
+        else if (chest.Enemy)
+        {
+            // An enemy appears after opening the chest 
+            player.CurrentLocation.Enemy = chest.Enemy;
+            // Chest is disappeared after opening
+            player.CurrentLocation.Chest = null;
+            Journal.Instance.Log("The chest contains an enemy. Watch out!");
+            // Determines the dungeon right after an enemy appears
+            player.DetermineLocation();
+        }
+        else
+        {
+            // Player gets gold from opening the chest
+            player.Gold += chest.Gold;
+            player.AddItem(chest.Item);
+            UIController.OnPlayerStatChange();
+            UIController.OnPlayerItemsChange();
+            Journal.Instance.Log("You found: " + chest.Item + " and " + chest.Gold + "g.");
+        }
+        player.CurrentLocation.Chest = null;
+        dynamicControls[3].interactable = false;
     }
 
     // Exit floor method 

@@ -6,8 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4090)
+2018-05-08
+- Open chest button fixed. 
+- Dynamic screens in orientation and resolution (in progress).
+
 ## 1.0 (Build 4080)
-2018-06-06
+2018-05-07
 - Interface tested in EnemyDatabase. 
 - Open chest button (in progress).
 

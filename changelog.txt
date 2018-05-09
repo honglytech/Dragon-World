@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4092)
+2018-05-09
+- Game menu added (in progress). 
+- Dynamic screens in orientation and resolution (in progress).
+
 ## 1.0 (Build 4090)
 2018-05-08
 - Open chest button fixed. 

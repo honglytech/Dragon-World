@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4095)
+2018-05-10
+- Game menu contains start, about and quit buttons. 
+- Game menu buttons can now be pressed to different pages. 
+- Game menu is working with exisitng gameplay. 
+
 ## 1.0 (Build 4092)
 2018-05-09
 - Game menu added (in progress). 
@@ -14,7 +20,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 1.0 (Build 4090)
 2018-05-08
 - Open chest button fixed. 
-- Dynamic screens in orientation and resolution (in progress).
 
 ## 1.0 (Build 4080)
 2018-05-07

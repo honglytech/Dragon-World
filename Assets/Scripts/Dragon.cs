@@ -4,7 +4,7 @@ using UnityEngine;
 using TextDragonWorldRPG;
 using System.IO;
 
-// Dragon class is inherited from Enemy class 
+// Dragon class is inherited from Enemy class that uses load data from JSON file.
 public class Dragon : Enemy
 {
 	string path;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TextDragonWorldRPG;
 
-// This UIController class will define events for the UI 
+// This UIController class will define events for the UI that includes player, enemy and items updated stats.
 public class UIController : MonoBehaviour {
 
     [SerializeField]
@@ -35,15 +35,6 @@ public class UIController : MonoBehaviour {
             player.Energy, player.Attack, player.Defence, player.Gold);
     }
 
-    public void UpdatePlayerItems()
-    {
-        playerItemsText.text = "Items: ";
-        foreach (string item in player.Inventory)
-        {
-            playerItemsText.text += item + " / ";
-        }
-    }
-
     public void UpdateEnemyStats(Enemy enemy)
     {
         if (enemy)
@@ -52,5 +43,14 @@ public class UIController : MonoBehaviour {
         else
         // when there is no enemy, no information about enemy is displayed
             enemyStatsText.text = "";
+    }
+
+    public void UpdatePlayerItems()
+    {
+        playerItemsText.text = "Items: ";
+        foreach (string item in player.Inventory)
+        {
+            playerItemsText.text += item + " / ";
+        }
     }
 }

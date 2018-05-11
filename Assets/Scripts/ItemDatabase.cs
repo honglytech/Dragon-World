@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
+// ItemDatabase is a class that stores items when open chest and displays to the player.
 public class ItemDatabase : MonoBehaviour
 {
 

@@ -5,10 +5,12 @@ using UnityEngine;
 using TextDragonWorldRPG;
 using System.IO;
 
+// Player class is interited Character class that contains methods for nativating inside dungeons
+// and determine current player location and more. 
 public class Player : Character
 {
     string path;
-    string jsonString;
+    string jsonString; 
 
     public int Floor { get; set; }
     // Track current player location

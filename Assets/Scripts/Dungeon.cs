@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
+// Dungeon class contains a constructor that creates a randm dungeon for gameplay.
 public class Dungeon
 {
 

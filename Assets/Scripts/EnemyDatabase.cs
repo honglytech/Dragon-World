@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
+// EnemyDatabase is a class contains a list of enemy objects. This could be Dragon enemy
+// or EvilSpirit enemy while playing the game.
 public class EnemyDatabase : MonoBehaviour
 {
 

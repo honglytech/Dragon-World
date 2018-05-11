@@ -5,6 +5,7 @@ using TextDragonWorldRPG;
 
 
 // Enemy class is inherited from Character class 
+// This class is the base class for Dragon and EvilSpirit classes.  
 public class Enemy : Character
 {
 	public string Description { get; set; }

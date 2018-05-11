@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TextDragonWorldRPG;
 
+// DragonWorld is a class that generates dungeons and creates the grids for gameplay.
 public class DragonWorld : MonoBehaviour
 {
 

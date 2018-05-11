@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TextDragonWorldRPG;
 
+// Journal class is used in Encounter and Player classes to display information to the player.
 public class Journal : MonoBehaviour 
 {
 	

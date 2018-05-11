@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4100)
+2018-05-11
+- Each class explanation added. 
+- Remove unused classes. 
+- Remove unused scene.
+- Remove unused scene from "Scenes In Build" under build settings. 
+
 ## 1.0 (Build 4095)
 2018-05-10
 - Game menu contains start, about and quit buttons. 

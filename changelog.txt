@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (Build 4120)
+2018-05-12
+- Moved own graphics to folder name: "raw sources".
+- Added examples on how to call major methods. 
+- methods explanation added in Player class. 
+
 ## 1.0 (Build 4100)
 2018-05-11
 - Each class explanation added. 

@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.0 (In Progress)
+- Dynamic screens in orientation and resolution.
+- A licenses.txt includes all materials used with legal rights for commercial purpose.
+- Author/attribution: author name.
+- About page has Legal section where all required attributions.
+- Attributions include hyperlinks to source pages.
+- Includes an API reference of major public classes and methods so that other developers can take over the project.
+- The game meets App store guidelines.
+- All icons and splash screens for the targeted devices.
+- The game has a folder of all required information to publish the app (promo text or screenshots per device).
+
 ## 1.0 (Build 4120)
 2018-05-12
 - Moved own graphics to folder name: "raw sources".

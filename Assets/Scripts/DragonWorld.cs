@@ -63,4 +63,11 @@ public class DragonWorld : MonoBehaviour
 		Dungeon[(int)exitDungeon.y, (int)exitDungeon.y].Empty = false;
 		Debug.Log ("Exit is at: " + exitDungeon + " " + Time.time); 
 	}
+
+    // Sample examples of how to call the GenerateFloor method 
+    // Example #1: generate new floor for player class
+    // player.world.GenerateFloor(); 
+    // Example #2: generate new floor for Enemy class to stay in various dungeons, waiting for the player
+    // Enemy.world.GenerateFloor();
+
 }

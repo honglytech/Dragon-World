@@ -40,8 +40,7 @@ public class Player : Character
         Inventory = new List<string>();
         // Current position 
         DungeonIndex = new Vector2(2, 2);
-        // Set up the dungeon for navigation and check if it is empty
-        //world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y].Empty = true ;
+        // Set up the dungeon for navigation and check if it is empty        
         this.CurrentLocation = world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y];
         this.CurrentLocation.Empty = true;
         //AddItem("many items");
@@ -49,6 +48,7 @@ public class Player : Character
         UIController.OnPlayerItemsChange();
     }
 
+    // Move methods allows player to move in four directions: north, east, south and west.
     public void Move(int direction)
     {
         // If the current player location has an enemy, then stop execution
@@ -124,9 +124,10 @@ public class Player : Character
 
     }
 
+    // This methods determine where the current player location (dungeon) is. 
     public void DetermineLocation()
     {
-        this.CurrentLocation = world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y];
+        this.CurrentLocation = world.Dungeon[(int) DungeonIndex.x, (int) DungeonIndex.y];
         Debug.Log(DungeonIndex);
         // Disable all dynmaic controls at the start of determine player current location 
         // then start enable relevant buttons only. If the room has enemy, player can only 
@@ -140,7 +141,7 @@ public class Player : Character
         else if (this.CurrentLocation.Chest != null)
         {
             encounter.StartChest();
-            Journal.Instance.Log("Player has found a chest!" + " What do you want to do now?" );
+            Journal.Instance.Log("Player has found a chest!" + " What do you want to do now?");
         }
         else if (this.CurrentLocation.Enemy != null)
         {

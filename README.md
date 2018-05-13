@@ -43,16 +43,7 @@ Download Link: https://unity3d.com/get-unity/download
 - Player, enemy and item stats are displayed and updated in real time. 
 
 # API reference of major public classes and methods
-// Any classes or objects that inherits from this class can override this method
-// If there is a latest inheritance called, it will use the override of the latest derivative of character
-public virtual void TakeDamage(int amount)
-{
-    Energy -= amount;
-    if (Energy <= 0)
-    {
-        Die();
-    }
-}
+![Alt text](/Screenshots/001.png?raw=true "Optional Title")
 
 
 # Henry comments 13/April:

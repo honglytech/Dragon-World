@@ -57,6 +57,9 @@ Move method is used through Unity Inspector
 Move method is used and assigned to walk controls with On Click event
 ![Alt text](/Screenshots/004.png?raw=true "Move method is used and assigned to walk controls with On Click event")
 
+More info about this project's API Reference can be found from the link below on page 29: 
+https://goo.gl/UwXFy6
+
 # Henry comments 13/April:
 - You need many more commits per week to pass.
 - So far I can't see any useful code, nor any text-based data files.

@@ -42,6 +42,19 @@ Download Link: https://unity3d.com/get-unity/download
 - Each enemy has different energy, attack, defence and gold.
 - Player, enemy and item stats are displayed and updated in real time. 
 
+# API reference of major public classes and methods
+// Any classes or objects that inherits from this class can override this method
+// If there is a latest inheritance called, it will use the override of the latest derivative of character
+public virtual void TakeDamage(int amount)
+{
+    Energy -= amount;
+    if (Energy <= 0)
+    {
+        Die();
+    }
+}
+
+
 # Henry comments 13/April:
 - You need many more commits per week to pass.
 - So far I can't see any useful code, nor any text-based data files.

@@ -11,7 +11,7 @@ public class Dragon : Enemy
 	// Represent raw JSON data
 	string jsonString;
 
-	// Use this for initialization
+	// The method will load once the class is called.
 	void Start ()
 	{	
 		// Store the path of JSON data file 

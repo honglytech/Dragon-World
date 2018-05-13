@@ -43,7 +43,7 @@ Download Link: https://unity3d.com/get-unity/download
 - Player, enemy and item stats are displayed and updated in real time. 
 
 # API reference of major public classes and methods
-![Alt text](/Screenshots/001.png?raw=true "Optional Title")
+![Alt text](/Screenshots/001.png?raw=true "TakeDamage method has been used for player or enemy classes with different parameters")
 
 
 # Henry comments 13/April:

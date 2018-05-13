@@ -43,14 +43,17 @@ Download Link: https://unity3d.com/get-unity/download
 - Player, enemy and item stats are displayed and updated in real time. 
 
 # API reference of major public classes and methods
-<p align="center">
-![Alt text](/Screenshots/001.png?raw=true "TakeDamage method has been used for player or enemy classes with different parameters")
 TakeDamage method has been used for player or enemy classes with different parameters
-</p>
+![Alt text](/Screenshots/001.png?raw=true "TakeDamage method has been used for player or enemy classes with different parameters")
 
 An example of TakeDamage method is called inside Attack method in Encounter class 
 ![Alt text](/Screenshots/002.png?raw=true "An example of TakeDamage method is called inside Attack method in Encounter class")
 
+Move method is used through Unity Inspector
+![Alt text](/Screenshots/003.png?raw=true "Move method is used through Unity Inspector")
+
+Move method is used and assigned to walk controls with On Click event
+![Alt text](/Screenshots/004.png?raw=true "Move method is used and assigned to walk controls with On Click event")
 
 # Henry comments 13/April:
 - You need many more commits per week to pass.

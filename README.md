@@ -31,7 +31,7 @@ Download Link: https://unity3d.com/get-unity/download
 # Explanation of major features
 - The game allows player to move in four directions, including north, east, south and west inside Player.cs.
 - Player has the ability to fight, run, exit and open chest inside Encounter.cs.
-  - Fight: player can fight against the enemy in the dungeon.
+  - Fight: player can fight against the enemy found in the dungeon.
   - Run: player can escape or avoid the enemy found in the dungeon.
   - Exit: player can exit the current dungeon to the next floor.
   - Open chest: player can open chest to get things that may include Trap, Heal, Enemy or Item & Gold.

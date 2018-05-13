@@ -43,8 +43,10 @@ Download Link: https://unity3d.com/get-unity/download
 - Player, enemy and item stats are displayed and updated in real time. 
 
 # API reference of major public classes and methods
-TakeDamage method has been used for player or enemy classes with different parameters
+<p align="center">
 ![Alt text](/Screenshots/001.png?raw=true "TakeDamage method has been used for player or enemy classes with different parameters")
+TakeDamage method has been used for player or enemy classes with different parameters
+</p>
 
 An example of TakeDamage method is called inside Attack method in Encounter class 
 ![Alt text](/Screenshots/002.png?raw=true "An example of TakeDamage method is called inside Attack method in Encounter class")

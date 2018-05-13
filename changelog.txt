@@ -131,11 +131,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added 
 - Dungeon class added. 
 - GetRandomEnemy method added to EnemyDatabase class. 
+# Progress towards milestone 1 and 2: 
+- A new class and a new method are created for dungeon and get random enemy.
 
 ## 1.0 (Build 2023)
 2018-04-22
 ### Added 
 - Chest class added. 
+# Progress towards milestone 1 and 2: 
+- New class is created for chest in the game.
 
 ## 1.0 (Build 2020)
 2018-04-21
@@ -147,12 +151,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Draged Dragon component to EnemyDatabase object in Inspector.
 - Added EvilSpirit component to EnemyDatabase object. 
 - Set Scripting Runtime Version to .Net 4.6 in Edit -> Project Settings -> Player and under Scripting Runtime Version, set it to Experimental (.NET 4.6 Equivalent).
+# Progress towards milestone 1 and 2: 
+- More classes are created for the game. 
+- More time is spent on learning to use Unity as it is new tool to me.
 
 ## 1.0 (Build 1030)
 2018-04-20
 ### Added 
 - Player class added. 
 - ItemDatabase class added. 
+# Progress towards milestone 1 and 2: 
+- Player and ItemDatabase are created for player and item storage.
 
 ## 1.0 (Build 1024)
 2018-04-19
@@ -160,11 +169,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Enemy class added. 
 - Dragon enemy class added. 
 - EvilSpirit enemy class added. 
+# Progress towards milestone 1 and 2: 
+- More classes are created for the game.
 
 ## 1.0 (Build 1023)
 2018-04-18
 ### Added
 - Property defined for character class added. 
+# Progress towards milestone 1 and 2: 
+- Defined property for character class, the first step towards building the RPG game. 
 
 ## 1.0 (Build 1001)
 2018-03-19
@@ -172,4 +185,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
 - README.md contains the Dragon World text-based game information. 
 - Basic guidelines, including proper date formatting for CHANGELOG.
- 
+# Progress towards milestone 1 as planned:  
+- Finished installing Unity software. 
+- Created the app project, files, directories, trello board. and GitHub repository.
+- Learned to use SourceTree to push and commit the codes without using command lines.
+# Progress towards milestone 1 NOT as planned: 
+- Draw each app screen. 
+- Make the game run in a basic mode without error handling in Unity. 

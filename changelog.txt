@@ -22,33 +22,47 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Moved own graphics to folder name: "raw sources".
 - Added examples on how to call major methods. 
 - methods explanation added in Player class. 
+# Progress towards milestone 3:
+- New folder is created to store own graphic and added explanation to Player class' methods. 
 
 ## 1.0 (Build 4100)
 2018-05-11
 - Each class explanation added. 
 - Remove unused classes. 
 - Remove unused scene.
-- Remove unused scene from "Scenes In Build" under build settings. 
+- Remove unused scene from "Scenes In Build" under build settings.
+# Progress towards milestone 3:
+- Remove unused classes and scene as well as added explanations for all classes. 
 
 ## 1.0 (Build 4095)
 2018-05-10
 - Game menu contains start, about and quit buttons. 
 - Game menu buttons can now be pressed to different pages. 
 - Game menu is working with exisitng gameplay. 
+# Progress towards milestone 3:
+- Game menu buttons are created and linked to different screens.
 
 ## 1.0 (Build 4092)
 2018-05-09
 - Game menu added (in progress). 
 - Dynamic screens in orientation and resolution (in progress).
+# Progress towards milestone 3:
+- Game menu is created.
 
 ## 1.0 (Build 4090)
 2018-05-08
 - Open chest button fixed. 
+# Progress towards milestone 3:
+- Gameplay is being tested.
+- Open chest feature is working.
 
 ## 1.0 (Build 4080)
 2018-05-07
 - Interface tested in EnemyDatabase. 
 - Open chest button (in progress).
+# Progress towards milestone 3:
+- Gameplay is still being tested.
+- Working on Open chest feature.
 
 ## 1.0 (Build 4030)
 2018-05-06
@@ -56,7 +70,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Called methods from UIController class to Player, Enemy and Encounter classes. 
 - Draged UIController(Script) object to UIController object in Inspector.
 - Under UIController in Inspector, assigned Player object, Player(Text), Enemy(Text) and Item(Text).
-- Interface keyword used (in progress).  
+- Interface keyword used (in progress). 
+# Progress towards milestone 3:
+- Gameplay is still being tested.
 
 ## 1.0 (Build 4010)
 2018-05-05
@@ -69,6 +85,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - ExitFloor method added to Encounter class.
 - Prize method added to Encounter class.
 - OpenChest method added to Encounter class. 
+# Progress towards milestone 2 and 3:
+- The game is running properly.
+- Gameplay is being tested.
 
 ## 1.0 (Build 3068)
 2018-05-04
@@ -76,11 +95,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - DetermineLocation method is added. 
 - Move direction in Player class is working. 
 - Error log on movement: index outside the bounds of array is fixed. 
+# Progress towards milestone 2 as planned: 
+- Buttons are created for player to press for the four directions. 
+- Display player, enemy and item stats information on the screen.
+# Progress towards milestone 2 NOT as planned (More time to spend on learning Unity): 
+- Create and resize icons and splash screens.
+- Error handling or prevent game crash.
+- Add restart function. 
+- About screen. 
 
 ## 1.0 (Build 3043) 
 2018-05-03
-- Add comments explaining the use of JSON.
+- Added comments explaining the use of JSON.
 - Testing and debugging movement in Player class (in progress). 
+# Progress towards milestone 2:
+- Added comments in the source codes for explanations.
 
 ## 1.0 (Build 3042)
 2018-05-02
@@ -89,10 +118,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - In Panel -> WalkControls -> North. On the Onclick event in the Inspector, 
   - click on add button, select Runtime Only then select Player object. 
   - click on No Function, select Player then select Move(int) method and set the parameter to 0 (north).
+# Progress towards milestone 2:
+- A new class is created and added a reference to display text field.
 
 ## 1.0 (Build 3041)
 2018-05-01
 - Move direction method added in Player class (in progress). 
+# Progress towards milestone 2:
+- The moving function is created for player.
 
 ## 1.0 (Build 3040)
  2018-04-30
@@ -100,24 +133,34 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Created Player object in hierarchy.
 - Draged Player(Script) and Journal(Script) components to Player object in Inspector. 
 - Added a reference to text field by dragging display text field in hierarchy and dropping at Player Inspector -> Journal (Script) Log Text.
+# Progress towards milestone 2:
+- A new class is created and added a reference to display text field.
 
 ## 1.0 (Build 3022)
 2018-04-29
 - Dragon class now supports JSON file.
 - EvilSpirit class supports JSON file. 
+# Progress towards milestone 2:
+- JSON file is created and tested for Dragon and EvilSpirit classes.
 
 ## 1.0 (Build 3017)
 2018-04-28
 - JSON file is added inside StreamingAssets folder.
 - player.json is tested with Player class. 
+# Progress towards milestone 2:
+- JSON file is created and tested inside Player class. 
 
 ## 1.0 (Build 3012)
 2018-04-27
 - Added User Interface for Home Screen.
+# Progress towards milestone 1 and 2:
+- User Interface is created for main screen of the game. 
 
 ## 1.0 (Build 3010)
 2018-04-25
 - Added coroutine to GenerateFloor method in DragonWorld class. 
+# Progress towards milestone 1 and 2: 
+- Coroutine is added a function for delay in seconds. 
 
 ## 1.0 (Build 3000)
 2018-04-24
@@ -125,6 +168,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Created DragonWorld object in hierarchy.
 - Draged DragonWorld component (class) to DragonWorld object in Inspector and set grid values. 
 - Set script execution order in Edit -> Project Settings and add EnemyDatabase, ItemDatabase then DragonWorld.
+# Progress towards milestone 1 and 2: 
+- A new class is created and set script execution to run and test the game.
 
 ## 1.0 (Build 2024)
 2018-04-23

@@ -28,6 +28,20 @@ Download Link: https://unity3d.com/get-unity/download
 5. click on Menu.unity to open the game with Unity software. 
 6. Once the game is opened in Unity, press on the Play (Triangle) button to run the game. 
 
+# Explanation of major features
+- The game allows player to move in four directions, including north, east, south and west inside Player.cs.
+- Player has the ability to fight, run, exit and open chest inside Encounter.cs.
+  - Fight: player can fight against the enemy in the dungeon.
+  - Run: player can escape or avoid the enemy found in the dungeon.
+  - Exit: player can exit the current dungeon to the next floor.
+  - Open chest: player can open chest to get things that may include Trap, Heal, Enemy or Item & Gold.
+- Player will also get prize once the enemy is killed such as items and gold.
+- The game data can be easily changed since it is in JSON file.
+- The game can generate new floors for the gameplay.
+- Random dungeons will be created to avoid repetition.
+- Each enemy has different energy, attack, defence and gold.
+- Player, enemy and item stats are displayed and updated in real time. 
+
 # Henry comments 13/April:
 - You need many more commits per week to pass.
 - So far I can't see any useful code, nor any text-based data files.

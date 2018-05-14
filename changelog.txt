@@ -17,6 +17,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - All icons and splash screens for the targeted devices.
 - The game has a folder of all required information to publish the app (promo text or screenshots per device).
 
+## 1.0 (Build 4130)
+2018-05-14
+- Legal section added under About page with Hyperlinks class. 
+- Users can press on the buttons to access legal source page. 
+- Updated Grading Criteria document. 
+
+## 1.0 (Build 4125)
+2018-05-13
+- Updated Grading Criteria document. 
+
 ## 1.0 (Build 4120)
 2018-05-12
 - Moved own graphics to folder name: "raw sources".

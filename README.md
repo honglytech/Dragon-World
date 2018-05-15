@@ -60,6 +60,9 @@ Move method is used and assigned to walk controls with On Click event
 More info about this project's API Reference can be found from the link below on page 29: 
 https://goo.gl/UwXFy6
 
+# Dynamic resolution settings
+![Alt text](/Screenshots/dynamic-resolution.gif?raw=true "Dynamic resolution setting on Unity")
+
 # Henry comments 13/April:
 - You need many more commits per week to pass.
 - So far I can't see any useful code, nor any text-based data files.

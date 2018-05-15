@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 2018-05-15
 - Updated about page to include images. 
 - Dynamic screens in orientation and resolution.
+- Updated README.md to include "Dynamic in orientation and resolution settings" section with gif demonstration.
 
 ## 1.0 (Build 4130)
 2018-05-14

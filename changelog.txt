@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - All splash screens for targeted devices. 
 - Background image added to main menu. 
 - Sound added to the game. 
-- Updated README.md to include icons and splash screens in Unity. 
+- Updated README.md to include icons and splash screens in Unity under "Splash screens and icons settings for Android and iOS" section. 
 - Updated Grading Criteria document. 
 
 ## 1.0 (Build 4150)

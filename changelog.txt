@@ -191,7 +191,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 1.0 (Build 2024)
 2018-04-23
-### Added 
 - Dungeon class added. 
 - GetRandomEnemy method added to EnemyDatabase class. 
 # Progress towards milestone 1 and 2: 
@@ -199,14 +198,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 1.0 (Build 2023)
 2018-04-22
-### Added 
 - Chest class added. 
 # Progress towards milestone 1 and 2: 
 - New class is created for chest in the game.
 
 ## 1.0 (Build 2020)
 2018-04-21
-### Added 
 - Added EnemyDatabase class. 
 - Created ItemDatabase object in hierarchy.
 - Draged ItemDatabase component to ItemDatabase object in Inspector. 
@@ -220,7 +217,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 1.0 (Build 1030)
 2018-04-20
-### Added 
 - Player class added. 
 - ItemDatabase class added. 
 # Progress towards milestone 1 and 2: 
@@ -228,7 +224,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 1.0 (Build 1024)
 2018-04-19
-### Added
 - Enemy class added. 
 - Dragon enemy class added. 
 - EvilSpirit enemy class added. 
@@ -237,14 +232,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 1.0 (Build 1023)
 2018-04-18
-### Added
 - Property defined for character class added. 
 # Progress towards milestone 1 and 2: 
 - Defined property for character class, the first step towards building the RPG game. 
 
 ## 1.0 (Build 1001)
 2018-03-19
-### Added
 - This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
 - README.md contains the Dragon World text-based game information. 
 - Basic guidelines, including proper date formatting for CHANGELOG.

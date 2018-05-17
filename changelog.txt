@@ -6,10 +6,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## 1.0 (In Progress)
-- The game meets App store guidelines.
-- The game has a folder of all required information to publish the app (promo text or screenshots per device).
-
 ## 1.0 (Build 5100)
 2018-05-16
 - All icons for the targeted devices.

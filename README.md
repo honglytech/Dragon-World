@@ -60,6 +60,9 @@ Move method is used and assigned to walk controls with On Click event
 More info about this project's API Reference can be found from the link below on page 29: 
 https://goo.gl/UwXFy6
 
+# Dragon World Website
+https://www.hongly-portfolio.com/dragonworld
+
 # Dynamic in orientation and resolution settings 
 ![Alt text](/Screenshots/dynamic-resolution.gif?raw=true "Dynamic settings in orientation & resolution on Unity")
 

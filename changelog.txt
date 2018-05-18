@@ -4,8 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.3.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Released]
+## 1.0 
+2018-05-18
+- Edited video. 
+- Uploaded video to YouTube.
+- Updated changelog file. 
+- Updated README.md to include link to YouTube video. 
+- Updated Grading Criteria document. 
 
+## 1.0 (Build 5168)
+2018-05-17
+- Recorded video. 
+- Updated Grading Criteria document. 
+- Published the game to Google Play store. 
+
+## [Unreleased]
 ## 1.0 (Build 5100)
 2018-05-16
 - All icons for the targeted devices.

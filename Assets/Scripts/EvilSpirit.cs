@@ -22,9 +22,6 @@ public class EvilSpirit : Enemy
 		Debug.Log(Gold);
 		Description = "Evil Spirit";
 	    MaximunEnergy = 10;
-		//Attack = 4;
-		//Defence = 3;
-		//Gold = 20;
 		Inventory.Add ("Eyes");
 	}
 }

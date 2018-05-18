@@ -16,4 +16,10 @@ public class Hyperlinks : MonoBehaviour {
     {
         Application.OpenURL("https://dashinvaine.deviantart.com/art/Dragon-and-Captive-reloaded-129209195");
     }
+
+    // More attibutions to the authors.
+    public void OpenHyperlinkThree()
+    {
+        Application.OpenURL("https://github.com/lyhd/Dragon-World/blob/master/licenses.txt");
+    }
 }

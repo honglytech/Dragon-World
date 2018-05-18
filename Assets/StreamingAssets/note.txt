@@ -1,0 +1,2 @@
+"StreamingAssets" is the default external data folder for Unity. 
+Changing it to "data" would cause error when compiling. 

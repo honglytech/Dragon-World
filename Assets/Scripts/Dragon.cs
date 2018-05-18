@@ -7,7 +7,7 @@ using System.IO;
 // Dragon class is inherited from Enemy class that uses load data from JSON file.
 public class Dragon : Enemy
 {
-	string path;
+    string path;
 	// Represent raw JSON data
 	string jsonString;
 
@@ -20,16 +20,9 @@ public class Dragon : Enemy
 		jsonString = File.ReadAllText(path);
         // Pass dragonJson type so that JSON file knows which type it is working with
 	    DragonJson gameDragon = JsonUtility.FromJson<DragonJson>(jsonString);
-		//Debug.Log(gameDragon.Attack);
 
-		// For now, these variables are used for testing 
-		//Energy = 20;
 	    MaximunEnergy = 20;
-		//Attack = gameDragon.Attack;
 		Description = "Dragon";
-		//Debug.Log(Attack);
-		//Defence = 5;
-		//Gold = 15;
 		Inventory.Add ("Wing");
 	}
 }

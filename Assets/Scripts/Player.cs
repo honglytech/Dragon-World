@@ -30,20 +30,13 @@ public class Player : Character
         PlayerJson gamePlayer = JsonUtility.FromJson<PlayerJson>(jsonString);
         Debug.Log(gamePlayer.Attack);
 
-
-        // For now, these variables are used for testing 
-        //Floor = 0; 
-        //Energy = 25;
-        //Attack = 15;
-        //Defence = 6;
-        //Gold = 0;
         Inventory = new List<string>();
         // Current position 
         DungeonIndex = new Vector2(2, 2);
         // Set up the dungeon for navigation and check if it is empty        
         this.CurrentLocation = world.Dungeon[(int)DungeonIndex.x, (int)DungeonIndex.y];
         this.CurrentLocation.Empty = true;
-        //AddItem("many items");
+        
         UIController.OnPlayerStatChange();
         UIController.OnPlayerItemsChange();
     }
@@ -136,12 +129,12 @@ public class Player : Character
 
         if (this.CurrentLocation.Empty)
         {
-            Journal.Instance.Log("Player is in an empty dungeon!");
+            Journal.Instance.Log("You are in an empty dungeon!");
         }
         else if (this.CurrentLocation.Chest != null)
         {
             encounter.StartChest();
-            Journal.Instance.Log("Player has found a chest!" + " What do you want to do now?");
+            Journal.Instance.Log("You have found a chest!" + " Do you want to open it?");
         }
         else if (this.CurrentLocation.Enemy != null)
         {
@@ -151,7 +144,7 @@ public class Player : Character
         }
         else if (this.CurrentLocation.Exit)
         {
-            Journal.Instance.Log("You can exit to the next floor. Do you want to continue?");
+            Journal.Instance.Log("You found the next floor. Do you want to exit?");
             encounter.StartExit();
         }
     }
@@ -169,7 +162,6 @@ public class Player : Character
         Inventory.Add(ItemDatabase.Instance.Items[item]);
         UIController.OnPlayerItemsChange();
     }
-
     
     public override void TakeDamage(int amount)
     {

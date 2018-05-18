@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Updated changelog file. 
 - Updated README.md to include link to YouTube video. 
 - Updated Grading Criteria document. 
+- Added Dragon World website link in README.md. 
 
 ## 1.0 (Build 5168)
 2018-05-17
